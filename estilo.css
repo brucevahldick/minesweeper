@@ -1,0 +1,131 @@
+table
+{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+}
+
+td
+{
+    border: 1px solid black;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+}
+
+td:hover
+{
+    background-color: lightgrey;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.aberta
+{
+    background-color: grey;
+    color: #FFF;
+    width: 27px;
+    height: 27px;
+}
+
+.bandeira
+{
+    background-color: green;
+}
+
+.fimJogo
+{
+    background-color: orange;
+}
+
+.fimJogoBandeira
+{
+    background-color: greenyellow;
+}
+
+.explodiu
+{
+    background-color: red;
+}
+
+.cubo
+{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.legenda
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-legenda
+{
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+.div-legenda p
+{
+    margin-left: 10px;
+}
+
+#resultado
+{
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+.botao
+{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: #FFF;
+    margin-top: 10px;
+}
+
+.botao:hover
+{
+    cursor: pointer;
+    background-color: #FFF;
+    color: black;
+}
+
+.contagem_bombas
+{
+    font-family: Roboto;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.opcoes
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.opcoes input
+{
+    width: 30px;
+}
