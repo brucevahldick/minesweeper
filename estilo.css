@@ -1,7 +1,5 @@
 table
 {
-    height: 500px;
-    width: 500px;
     border: 1px solid black;
 }
 
@@ -17,8 +15,8 @@ td
 {
     border: 1px solid black;
     text-align: center;
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
 }
 
 td:hover
@@ -116,16 +114,4 @@ td:hover
     border: 1px solid black;
     text-align: center;
     padding-top: 10px;
-}
-
-.opcoes
-{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.opcoes input
-{
-    width: 30px;
 }

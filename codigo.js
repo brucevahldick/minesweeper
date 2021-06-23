@@ -2,7 +2,6 @@ var tabela = document.querySelector('.tabela'); //tabela do html que vai receber
 var x = 0; //variável auxiliar
 var resultado = document.querySelector('#resultado');
 var texto = document.querySelector('#texto');
-var n_lin = document.querySelector('#n_linhas');
 
 var campo = new Array(16); //vetor que vira a matriz e corresponde ao campo minado
 var linhas = new Array(16); //vetor para criar as tr
@@ -12,6 +11,10 @@ for (var i = 0; i < campo.length; i++) {
     campo[i] = new Array(16);
 }
 //-----------------------------
+
+const noRightClick = tabela;
+
+noRightClick.addEventListener("contextmenu", e => e.preventDefault());
 
 var contador = document.querySelector('.contagem_bombas');
 
@@ -52,7 +55,9 @@ botao.addEventListener('click', recomecar);
 function clique(event) {
     if (event.target.tagName == 'TD') {
         if (!event.target.parentNode.parentNode.classList.contains('acabou')) {
-            if (event.button == 1) {
+            if (event.button == 2) {
+
+                
 
                 if (event.target.classList.contains('bandeira')) {
                     event.target.classList.remove('bandeira');
@@ -301,7 +306,7 @@ function recomecar() {
 }
 
 function condicaoVitoria(a) {
-    console.log(contadorFixo);
+    
     if (contadorFixo == campo.length * campo[0].length) {
         event.target.parentNode.parentNode.classList.add('acabou');
         resultado.textContent = 'Vitória!';
